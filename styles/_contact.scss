@@ -1,0 +1,49 @@
+.contact {
+    color: black;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "info icons hours";
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.contact-info {
+    grid-area: info;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.icons {
+    grid-area: icons;
+    margin-top: 1rem;
+}
+
+.icon {
+    font-size: 2.5rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.hours {
+    grid-area: hours;
+    margin-top: 1rem;
+}
+
+@media (max-width: 954px) {
+    .contact-content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "icons icons" "info hours";
+    }
+}
+
+@media (max-width: 510px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        grid-template-areas: "icons" "info" "hours";
+    }
+}
