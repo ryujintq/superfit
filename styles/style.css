@@ -441,8 +441,8 @@
 }
 
 .pricing {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8))), url(../images/contact.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8)), url(../images/contact.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7))), url(../images/contact.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url(../images/contact.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -529,6 +529,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -562,6 +566,11 @@ h4 {
 
 p {
   line-height: 1.6;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 .mt-1 {
