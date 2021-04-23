@@ -5,7 +5,5 @@ const lines = document.querySelectorAll('.line')
 menuIcon.addEventListener('click', () => {
     navlist.classList.toggle('menu-open')
 
-    lines.forEach(line => {
-        line.classList.toggle('menu-open')
-    })
+    menuIcon.classList.toggle('menu-open')
 })
